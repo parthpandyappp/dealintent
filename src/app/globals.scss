@@ -15,14 +15,63 @@ body {
   flex-direction: column;
   height: 10vh;
   min-height: 100vh;
+  padding: 20px 31px;
+  background-color: #f2fbf9;
 }
 
 .layout-container {
   display: flex;
   flex: 1;
-  border: 10px solid blue;
   height: 100%;
 }
+
+.flex {
+  display: flex;
+
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-between {
+    justify-content: space-between;
+  }
+  &.items-center {
+    align-items: center;
+  }
+  &.flex-col {
+    flex-direction: column;
+  }
+  &.flex-row {
+    flex-direction: row;
+  }
+  &.gap-1 {
+    gap: 1rem;
+  }
+  &.gap-2 {
+    gap: 2rem;
+  }
+  &.gap-3 {
+    gap: 3rem;
+  }
+  &.gap-5 {
+    gap: 5rem;
+  }
+}
+
+.gap-px-26 {
+  gap: 26px;
+}
+
+nav {
+  border-bottom: 1px solid #e9ebeb;
+  padding-bottom: 19px;
+}
+// .flexo {
+//   display: flex;
+//   &.items-center {
+//     align-items: center;
+//     border: 1px solid yellow;
+//   }
+// }
 
 a {
   color: inherit;
