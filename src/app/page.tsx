@@ -16,7 +16,7 @@ export default function Home() {
           className="flex items-center justify-between"
           style={{ padding: "10px 0px" }}
         >
-          <Typography className="heading">WeWork + Salesforce</Typography>
+          <p className="heading">WeWork + Salesforce</p>
           <Button variant="contained" className="btn font-bold">
             Publish/Share
           </Button>
