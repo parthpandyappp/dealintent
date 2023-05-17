@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Nunito", sans-serif;
 }
+
+// @font-face {
+//   font-family: "Proxima Nova";
+//   src: url("../../public/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 html,
 body {
@@ -43,6 +53,9 @@ body {
   &.flex-row {
     flex-direction: row;
   }
+  &.gap-05 {
+    gap: 0.5rem;
+  }
   &.gap-1 {
     gap: 1rem;
   }
@@ -61,9 +74,39 @@ body {
   gap: 26px;
 }
 
+.btn {
+  background-color: #00b686;
+  color: white;
+
+  &:hover {
+    background-color: #009e6d;
+  }
+
+  &:active {
+    background-color: #008958;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 182, 134, 0.5);
+  }
+
+  &.font-bold {
+    font-weight: 700;
+  }
+}
+
 nav {
   border-bottom: 1px solid #e9ebeb;
   padding-bottom: 19px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 // .flexo {
 //   display: flex;

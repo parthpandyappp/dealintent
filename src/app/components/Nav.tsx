@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between items-center">
       <section className="flex items-center">
         <Image
           src="/dealintent-logo.svg"
@@ -12,7 +12,15 @@ const Nav = () => {
         />
         <Image src="/right-menu.svg" alt="right-menu" width={24} height={24} />
       </section>
-      <section className="flex gap-px-26 items-center">
+      <section className="more-options">
+        <Image
+          src="/more-option.png"
+          alt="more-options"
+          width={24}
+          height={24}
+        />
+      </section>
+      <section className="nav-actions flex gap-px-26 items-center">
         <Image
           src="/search-icon.svg"
           alt="search-icon"
