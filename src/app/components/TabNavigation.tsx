@@ -62,7 +62,7 @@ const TabNavigation = () => {
           />
         </Tabs>
         <TabPanel value={value} index={0}>
-          <article className="flex gap-1">
+          <article className="flex gap-1 company-profile">
             <section className="overview-menu">
               <Typography className="heading">Overview</Typography>
               <ul>
@@ -76,7 +76,15 @@ const TabNavigation = () => {
             <section className="w-full">
               <div className="flex justify-between items-center">
                 <Typography className="heading-2">Company Profile</Typography>
-                <div className="flex items-center page-icons">
+                <section className="more-options-1">
+                  <Image
+                    src="/more-option-1.svg"
+                    alt="more-options"
+                    width={24}
+                    height={24}
+                  />
+                </section>
+                <div className="page-icons flex items-center">
                   <Image
                     src="/download-icon.svg"
                     alt=""
@@ -141,7 +149,7 @@ const TabNavigation = () => {
                     alt="poster"
                     height={160}
                     width={420}
-                    className="cursor-pointer"
+                    className="cursor-pointer inner-one"
                   />
                 </div>
                 <Image

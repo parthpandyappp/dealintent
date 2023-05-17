@@ -21,8 +21,14 @@ export default function Home() {
             Publish/Share
           </Button>
         </section>
+        
         <section className="proposal-poster">
-          <Image src="/poster.svg" alt="poster" fill />
+          <Image
+            src="/main-poster.png"
+            className="main-poster"
+            alt="poster"
+            fill
+          />
           <Image
             src="/badge-poster.png"
             alt="poster"
@@ -32,7 +38,7 @@ export default function Home() {
           />
         </section>
         <section className="flex justify-between">
-          <Typography className="heading-2" style={{ marginTop: "5rem" }}>
+          <Typography className="heading-2" style={{ marginTop: "3rem" }}>
             Project Scope Recap
           </Typography>
           <div className="flex flex-col">
