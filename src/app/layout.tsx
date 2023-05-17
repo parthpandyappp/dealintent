@@ -1,8 +1,8 @@
 import { Nav } from "./components";
 import "./globals.scss";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -16,6 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dealintent</title>
+      </head>
       <body className={inter.className}>
         <Nav />
         <div className="layout-container">{children}</div>

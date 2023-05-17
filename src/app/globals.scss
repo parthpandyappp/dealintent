@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Nunito", sans-serif;
 }
+
+// @font-face {
+//   font-family: "Proxima Nova";
+//   src: url("../../public/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 html,
 body {
@@ -15,14 +25,96 @@ body {
   flex-direction: column;
   height: 10vh;
   min-height: 100vh;
+  padding: 20px 31px;
+  background-color: #f2fbf9;
 }
 
 .layout-container {
   display: flex;
   flex: 1;
-  border: 10px solid blue;
   height: 100%;
 }
+
+.flex {
+  display: flex;
+
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-between {
+    justify-content: space-between;
+  }
+  &.items-center {
+    align-items: center;
+  }
+  &.flex-col {
+    flex-direction: column;
+  }
+  &.flex-row {
+    flex-direction: row;
+  }
+  &.gap-05 {
+    gap: 0.5rem;
+  }
+  &.gap-1 {
+    gap: 1rem;
+  }
+  &.gap-2 {
+    gap: 2rem;
+  }
+  &.gap-3 {
+    gap: 3rem;
+  }
+  &.gap-5 {
+    gap: 5rem;
+  }
+}
+
+.gap-px-26 {
+  gap: 26px;
+}
+
+.btn {
+  background-color: #00b686;
+  color: white;
+
+  &:hover {
+    background-color: #009e6d;
+  }
+
+  &:active {
+    background-color: #008958;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 182, 134, 0.5);
+  }
+
+  &.font-bold {
+    font-weight: 700;
+  }
+}
+
+nav {
+  border-bottom: 1px solid #e9ebeb;
+  padding-bottom: 19px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+// .flexo {
+//   display: flex;
+//   &.items-center {
+//     align-items: center;
+//     border: 1px solid yellow;
+//   }
+// }
 
 a {
   color: inherit;
