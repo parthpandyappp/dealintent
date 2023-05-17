@@ -10,7 +10,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Proxima Nova",
+    fontFamily: "Nunito",
     fontSize: 14,
     fontWeightLight: 300,
     fontWeightRegular: 400,
